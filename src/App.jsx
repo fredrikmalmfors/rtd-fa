@@ -13,15 +13,14 @@ import AOS from 'aos';
 import Home from './pages/Home';
 import Apply from './pages/Apply';
 import About from './pages/About';
-import { ContactUs } from 'Email';
 
 /**
  * TODO:
- * - Bind form to emailjs
- *  - Send copy to own email
- *  - Show a confirmation before sending!
- *  - Check if there can be attatchments!!?!?
- * - Fill in a simple about us
+ * - Bind form to emailjs [Done]
+ *  - Send copy to own email [Done]
+ *  - Show a confirmation before sending! [TODO]
+ *  - Check if there can be attatchments!!?!? [Not needed]
+ * - Fill in a simple about us [TODO]
  * 
  */
 
@@ -52,7 +51,6 @@ function App() {
         <Route path="*" element={<Home />} />
         <Route path="/rtd-fa/about" element={<About />} />
         <Route path="/rtd-fa/apply" element={<Apply />} />
-        <Route path="/rtd-fa/test" element={<ContactUs />} />
       </Routes>
     </>
   );
