@@ -2,7 +2,9 @@ import React, { useEffect } from 'react';
 import {
   Routes,
   Route,
-  useLocation
+  useLocation,
+  HashRouter,
+  BrowserRouter
 } from 'react-router-dom';
 
 import 'aos/dist/aos.css';
@@ -26,7 +28,7 @@ import About from './pages/About';
 
 function App() {
 
-  const location = useLocation();
+  // const location = useLocation();
 
   useEffect(() => {
     AOS.init({
@@ -37,22 +39,22 @@ function App() {
     });
   });
 
-  useEffect(() => {
-    document.querySelector('html').style.scrollBehavior = 'auto'
-    window.scroll({ top: 0 })
-    document.querySelector('html').style.scrollBehavior = ''
-  }, [location.pathname]); // triggered on route change
+  // useEffect(() => {
+  //   document.querySelector('html').style.scrollBehavior = 'auto'
+  //   window.scroll({ top: 0 })
+  //   document.querySelector('html').style.scrollBehavior = ''
+  // }, [location.pathname]); // triggered on route change
 
   return (
-    <>
+    <BrowserRouter basename='/rtd-fa'>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/rtd-fa" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="apply" element={<Apply />} />
         <Route path="*" element={<Home />} />
-        <Route path="/rtd-fa/about" element={<About />} />
-        <Route path="/rtd-fa/apply" element={<Apply />} />
       </Routes>
-    </>
+    </BrowserRouter>
   );
 }
 
