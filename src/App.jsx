@@ -13,6 +13,7 @@ import AOS from 'aos';
 import Home from './pages/Home';
 import Apply from './pages/Apply';
 import About from './pages/About';
+import { ContactUs } from 'Email';
 
 /**
  * TODO:
@@ -46,9 +47,12 @@ function App() {
   return (
     <>
       <Routes>
-        <Route exact path="/rtd-fa" element={<Home />} />
-        <Route exact path="/rtd-fa/about" element={<About />} />
-        <Route exact path="/rtd-fa/apply" element={<Apply />} />
+        <Route index element={<Home />} />
+        <Route path="/rtd-fa" element={<Home />} />
+        <Route path="*" element={<Home />} />
+        <Route path="/rtd-fa/about" element={<About />} />
+        <Route path="/rtd-fa/apply" element={<Apply />} />
+        <Route path="/rtd-fa/test" element={<ContactUs />} />
       </Routes>
     </>
   );
