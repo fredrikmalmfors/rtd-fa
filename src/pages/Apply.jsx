@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import Header from '../partials/Header';
 
 function Apply() {
@@ -23,16 +22,16 @@ function Apply() {
 
               {/* 
               
-              Spelare skickar in ansökan med presentation av deras fotbollscv
-              Mall för ansökan
-              *Ålder
-              *Vikt/längd 
-              Position
-              Nuvarande / tidigare klubbar
-              Meriter inom fotboll 
-              Tre främsta styrkor
-              Presentera dig själv som människa och dina ambitioner inom fotboll
-              Video med höjdpunkter (länk / ladda upp)
+                Spelare skickar in ansökan med presentation av deras fotbollscv
+                Mall för ansökan
+                *Ålder
+                *Vikt/längd 
+                Position
+                Nuvarande / tidigare klubbar
+                Meriter inom fotboll 
+                Tre främsta styrkor
+                Presentera dig själv som människa och dina ambitioner inom fotboll
+                Video med höjdpunkter (länk / ladda upp)
               
               */}
 

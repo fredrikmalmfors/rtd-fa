@@ -1,7 +1,3 @@
-import React from 'react';
-
-import TestimonialImage from '../images/testimonial.jpg';
-
 function Testimonials() {
   return (
     <section className="relative text-white">

@@ -21,10 +21,10 @@ function HeroHome() {
               <p className="text-xl mb-8 !opacity-70" data-aos="zoom-y-out" data-aos-delay="150">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a className="btn text-white bg-golden hover:bg-goldenlight w-full mb-4 sm:w-auto sm:mb-0" href="#0">Apply</a>
+                  <a className="btn text-white bg-golden hover:bg-goldenlight w-full mb-4 sm:w-auto sm:mb-0" href="/rtd-fa/apply">Apply</a>
                 </div>
                 <div>
-                  <a className="btn text-gray-800 bg-gray-100 hover:bg-gray-200 w-full sm:w-auto sm:ml-4" href="#0">About Us</a>
+                  <a className="btn text-gray-800 bg-gray-100 hover:bg-gray-200 w-full sm:w-auto sm:ml-4" href="/rtd-fa/about">About Us</a>
                 </div>
               </div>
             </div>

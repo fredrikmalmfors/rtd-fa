@@ -14,6 +14,16 @@ import Home from './pages/Home';
 import Apply from './pages/Apply';
 import About from './pages/About';
 
+/**
+ * TODO:
+ * - Bind form to emailjs
+ *  - Send copy to own email
+ *  - Show a confirmation before sending!
+ *  - Check if there can be attatchments!!?!?
+ * - Fill in a simple about us
+ * 
+ */
+
 function App() {
 
   const location = useLocation();
