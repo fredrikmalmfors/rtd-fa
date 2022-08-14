@@ -36,9 +36,9 @@ function App() {
   return (
     <>
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/apply" element={<Apply />} />
+        <Route exact path="/rtd-fa" element={<Home />} />
+        <Route path="/rtd-fa/about" element={<About />} />
+        <Route path="/rtd-fa/apply" element={<Apply />} />
       </Routes>
     </>
   );
