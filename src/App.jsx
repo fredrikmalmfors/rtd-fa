@@ -47,8 +47,8 @@ function App() {
     <>
       <Routes>
         <Route exact path="/rtd-fa" element={<Home />} />
-        <Route path="/rtd-fa/about" element={<About />} />
-        <Route path="/rtd-fa/apply" element={<Apply />} />
+        <Route exact path="/rtd-fa/about" element={<About />} />
+        <Route exact path="/rtd-fa/apply" element={<Apply />} />
       </Routes>
     </>
   );
